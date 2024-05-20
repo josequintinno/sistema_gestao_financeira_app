@@ -17,6 +17,8 @@
 
 body {
     font-family: Nunito;
+    margin: 0;
+    padding: 0;
 }
 
 .toolbar{
@@ -44,3 +46,132 @@ body {
 .toolbar-inner > .link i{
     font-size: 28px;
 }
+
+.top-nav {
+    background-color: var(--branco);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-logo {
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.title-logo span {
+    color: var(--verde);
+}
+
+.btn-card {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--branco);
+    border-radius: 50%;
+    border: 1px solid var(--gelo);
+    font-size: 24px;
+    margin-right: 5%;
+}
+
+.btn-card i {
+    color: var(--preto);
+}
+
+.btn-card::before {
+    content: attr(data-count);
+    background-color: var(--verde);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--branco);
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    margin-right: 5%;
+}
+
+.btn-card[data-count="0"]::before {
+    display: none;
+}
+
+a {
+    color: var(--verde);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+form {
+    padding-top: 10px;
+    background-color: var(--branco);
+    padding-bottom: 20px;
+    /* border: solid var(--preto) 1px; */
+    position: relative;
+}
+
+input[type="text"] {
+    width: 90%;
+    background-color: var(--gelo);
+    height: 45px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+::placeholder {
+    color: #b3afaf;
+    font-weight: bold;
+}
+
+.icone-busca {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 27px;
+    padding: 13px;
+    color: var(--preto);
+}
+
+.page-content {
+    background-color: var(--branco);
+}
+
+.img-fluid {
+    max-width: 100%;
+}
+
+.block {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* SWIPPER */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
