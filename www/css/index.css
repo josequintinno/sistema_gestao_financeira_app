@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+
+:root {
+    --branco: #FFFFFF;
+    --gelo: #f1f1f1;
+    --verde: #19c463;
+    --preto: #2a2a2a;
+}
+
+body {
+    font-family: Nunito;
+}
+
+.toolbar{
+    height: 80px;
+}
+
+.tab-link{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.toolbar-inner .link{    
+    flex:1;
+    height: 80px;  
+    line-height: 25px; 
+	font-weight:bold;    
+}
+
+.toolbar-inner .link:not(.active){
+    color:gray;
+	font-weight:normal;
+}
+
+.toolbar-inner > .link i{
+    font-size: 28px;
+}
